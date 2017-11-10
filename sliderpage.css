@@ -1,0 +1,83 @@
+
+
+.rslider {
+  display: inline-block;
+  margin: auto;
+}
+
+
+.navbar-brand {
+  width: 5%;
+}
+
+
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: top;
+}
+.navbar-nav {
+  width: 100%;
+}
+
+.navbar-nav li {
+  text-align: center;
+}
+
+.nav-link {
+  display: inline;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.nav-item {
+  width: 50%;
+}
+
+#form {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.form-control {
+  text-align: center;
+}
+
+#bitmoji-image{
+  display: block;
+  height: 35%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.nav-item{
+  font-family: 'Roboto';
+}
+
+.navbar-brand{
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.errormsg { text-align: center; padding: 150px; }
+h1 { font-size: 50px; text-align: center; padding: 150px;}
+.email { color: #dc8100; text-decoration: none; }
+.email:hover { color: #333; text-decoration: none; }
+
+/*
+inputpage.html
+*/
+.inputIcon {
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+#textIcon {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60%;
+  font-weight: bold;
+}
