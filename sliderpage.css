@@ -74,10 +74,34 @@ inputpage.html
   border-color: black;
   border-width: 1px;
   border-radius: 4px 4px 0 0;
+  background-color: white;
+  width: 100%;
 }
 
 #textIcon {
   font-family: "Times New Roman", Times, serif;
-  font-size: 60%;
+  font-size: 350%;
   font-weight: bold;
+}
+
+
+.buttonLayout {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%;
+  padding: 0;
+  height: auto;
+  display:inline-flex;
+}
+
+.buttonCustom {
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  background-color: white;
+  width: 100%;
+}
+
+.iconSymbol {
+  font-size: 400%;
 }

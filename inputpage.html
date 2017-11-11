@@ -4,9 +4,11 @@
     <title>Mynd</title>
     <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="sliderpage.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sliderpage.css"/>
+    
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
@@ -22,22 +24,21 @@
     </div>
   </nav>
 
-<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-
-  <div class="btn-group btn-group-lg" role="group" aria-label="....">
-    <button id="textIcon" type="button" class="btn btn-default inputIcon">
-      T
+  <div class="buttonLayout">
+      <button id="textIcon" type="button" class="buttonCustom">
+          T
+      </button>
+      <button type="button" class="buttonCustom">
+      <i class="material-icons iconSymbol">photo_camera</i>
     </button>
-    <button type="button" class="btn btn-default inputIcon">
-    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-  </button>
-    <button type="button" class="btn btn-default inputIcon">
-    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-  </button>
-    <button type="button" class="btn btn-default inputIcon">
-    <span class="glyphicon glyphicon-record" aria-hidden="true"></span>
-  </button>
-  </div>
+      <button class="buttonCustom">
+          <i class="material-icons iconSymbol">videocam</i>
+    </button>
+      <button class="buttonCustom">
+          <i class="material-icons iconSymbol">keyboard_voice</i>
+    </button>
+    </div>
+
 
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
