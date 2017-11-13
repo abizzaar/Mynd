@@ -17,22 +17,22 @@
 }
 .navbar-nav {
   width: 100%;
+  display: block;
 }
 
 .navbar-nav li {
   text-align: center;
+  float: left;
+  width: 50%;
 }
 
 .nav-link {
   display: inline;
 }
 
-.navbar .navbar-collapse {
+#navbar-titles {
   text-align: center;
-}
-
-.nav-item {
-  width: 50%;
+  width: 80%;
 }
 
 #form {
@@ -86,12 +86,13 @@ inputpage.html
 
 
 .buttonLayout {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 20%;
-  padding: 0;
+  margin-top: 10%;
+  margin-bottom: 2%;
   height: auto;
-  display:inline-flex;
+  margin-left: 15%;
+  display: inline-flex;
+  width: 70%;
+  justify-content: center;
 }
 
 .buttonCustom {
@@ -103,5 +104,15 @@ inputpage.html
 }
 
 .iconSymbol {
-  font-size: 400%;
+  font-size: 300%;
+}
+
+#text {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding-bottom: 80%;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
 }

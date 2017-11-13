@@ -1,45 +1,62 @@
 <html>
   <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Mynd</title>
     <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="sliderpage.css"/>
     
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
-    <a class="navbar-brand" href="index.html">Mynd</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html#today">Today</a>
-        <a class="nav-item nav-link" href="#">This Week<span class="sr-only">(current)</span></a>
-      </div>
-    </div>
-  </nav>
+  
+  
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
+          <a class="navbar-brand" href="#page-top">Mynd</a>
+          <div id="navbar-titles">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-item nav-link active" href="#today">Today <!-- <span class="sr-only">(current)</span> --></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="thisweek.html">This Week</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-  <div class="buttonLayout">
-      <button id="textIcon" type="button" class="buttonCustom">
-          T
+       
+        
+
+    <div class="buttonLayout">
+        <button id="textIcon" type="button" class="buttonCustom">
+            T
+        </button>
+        <button type="button" class="buttonCustom">
+        <i class="material-icons iconSymbol">photo_camera</i>
       </button>
-      <button type="button" class="buttonCustom">
-      <i class="material-icons iconSymbol">photo_camera</i>
-    </button>
-      <button class="buttonCustom">
-          <i class="material-icons iconSymbol">videocam</i>
-    </button>
-      <button class="buttonCustom">
-          <i class="material-icons iconSymbol">keyboard_voice</i>
-    </button>
-    </div>
+        <button class="buttonCustom">
+            <i class="material-icons iconSymbol">videocam</i>
+      </button>
+        <button class="buttonCustom">
+            <i class="material-icons iconSymbol">keyboard_voice</i>
+      </button>
+    </div> 
 
+    <textarea id="text">
+      At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+      </textarea>
 
+<form>
+        <input type="file" onchange="this.form.submit()" /> 
+    </form>
+    <form action="/action_page.php">
+      <input type="file" name="pic" accept="image/*">
+      <input type="submit">
+    </form>
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
