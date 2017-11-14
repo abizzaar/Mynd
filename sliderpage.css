@@ -62,6 +62,10 @@
   font-weight: bold;
 }
 
+.input-group {
+  margin-top: 30%;
+}
+
 .errormsg { text-align: center; padding: 150px; }
 h1 { font-size: 50px; text-align: center; padding: 150px;}
 .email { color: #dc8100; text-decoration: none; }
@@ -82,6 +86,7 @@ inputpage.html
   font-family: "Times New Roman", Times, serif;
   font-size: 350%;
   font-weight: bold;
+  width: 70%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -163,4 +168,5 @@ inputpage.html
   display: block;
   margin: auto;
   margin-top: 2%;
+  width: 80%;
 }

@@ -2,6 +2,10 @@
 var images = [];
 var imageHolder = document.getElementById("bitmoji-image");
 
+function init(){
+  if(screen.width <= 500)
+    document.getElementById("descrOfDay").style.fontSize = "10px";
+}
 
 // Slider value indicates the bitmoji element
 var slider_value = document.getElementById("score");

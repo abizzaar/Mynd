@@ -7,10 +7,12 @@ var textContainer = document.getElementById("textContainer");
 var w = "hi";
 function init() {
     for (i=0;i<4;i++) {
-        buttons.push(document.getElementById("button" + i));
+        buttons[i] = (document.getElementById("button" + i));
+    }
+    buttons[0].style.height = window.getComputedStyle(buttons[1]).width;
+    for (i=1;i<4;i++) {
         buttons[i].style.height = window.getComputedStyle(buttons[i]).width;
     }
-    
 }
 
 function openTab(evt, area) {
