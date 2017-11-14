@@ -6,13 +6,16 @@ var textContainer = document.getElementById("textContainer");
 //var photoArea = '<input type="file" accept="image/*">';
 var w = "hi";
 function init() {
-    for (i=0;i<4;i++) {
-        buttons[i] = (document.getElementById("button" + i));
-    }
-    buttons[0].style.height = window.getComputedStyle(buttons[1]).width;
-    for (i=1;i<4;i++) {
-        buttons[i].style.height = window.getComputedStyle(buttons[i]).width;
-    }
+    // for (i=0;i<4;i++) {
+    //     buttons[i] = (document.getElementById("button" + i));
+    // }
+    // buttons[0].style.height = window.getComputedStyle(buttons[1]).width;
+    // console.log(buttons[0].style.height);
+    // for (i=1;i<4;i++) {
+    //     buttons[i].style.height = window.getComputedStyle(buttons[i]).width;
+    //     console.log("height" + buttons[i].style.height);
+    //     console.log("width" + window.getComputedStyle(buttons[i]).width);
+    // }
 
 }
 
@@ -54,11 +57,11 @@ function openTab(evt, area) {
 /*  function showPhoto() {
      textContainer.innerHTML = photoArea;
  } */
-window.onload = function(){
-    if(!window.location.hash){
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-}
+// window.onload = function(){
+//     if(!window.location.hash){
+//         window.location = window.location + '#loaded';
+//         window.location.reload();
+//     }
+// }
 init();
 document.getElementById("button0").click();
