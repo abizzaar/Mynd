@@ -13,6 +13,7 @@ function init() {
     for (i=1;i<4;i++) {
         buttons[i].style.height = window.getComputedStyle(buttons[i]).width;
     }
+
 }
 
 function openTab(evt, area) {
@@ -53,6 +54,11 @@ function openTab(evt, area) {
 /*  function showPhoto() {
      textContainer.innerHTML = photoArea;
  } */
-
+window.onload = function(){
+    if(!window.location.hash){
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 init();
 document.getElementById("button0").click();
