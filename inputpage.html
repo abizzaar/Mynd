@@ -31,35 +31,46 @@
        
         
 
-    <div class="buttonLayout">
-        <button id="textIcon" type="button" class="buttonCustom">
+    <div class="tab buttonLayout">
+        <button id="button0" type="button" onclick="openTab(event, 'textArea')" class="tablinks buttonCustom">
             T
         </button>
-        <button type="button" class="buttonCustom">
-        <i class="material-icons iconSymbol">photo_camera</i>
+        <button id="button1" onclick="openTab(event, 'photo')" type="button" class="tablinks buttonCustom">
+        <i  class="material-icons iconSymbol">photo_camera</i>
       </button>
-        <button class="buttonCustom">
+        <button id="button2" onclick="openTab(event, 'video')" class="tablinks buttonCustom">
             <i class="material-icons iconSymbol">videocam</i>
       </button>
-        <button class="buttonCustom">
+        <button id="button3" onclick="openTab(event, 'audio')" class="tablinks buttonCustom">
             <i class="material-icons iconSymbol">keyboard_voice</i>
       </button>
     </div> 
 
-    <textarea id="text">
-      At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+    <div id="textContainer">
+    <textarea class="tabcontent" id="textArea">Hiiii
       </textarea>
+      <form method="post" enctype="multipart/form-data">
+      <input id="photo" class="hideInput tabcontent" type="file" accept="image/*" multiple>
+      <label class="label" id="photoLabel" for="photo"><p class="para">Click here to upload photos!</p><i class="material-icons labelIcons">add_a_photo</i></label>
+      <input id="video" class="hideInput tabcontent" type="file" accept="video/*" multiple>
+      <label class="label" id="videoLabel"for="video"><p class="para">Click here to upload videos!</p><i class="material-icons labelIcons">video_call</i></label>
+      <input id="audio" class="hideInput tabcontent" type="file" accept="audio/*" multiple>
+      <label class="label" id="audioLabel"for="audio"><p class="para">Click here to upload audio!</p><i class="material-icons labelIcons">settings_voice</i></label>
+    </form>
+    </div>
+    <a href="thisweek.html" role="button" class="btn btn-primary" name="submit" id="submitInput" >Submit</a>
 
+<!-- 
 <form>
         <input type="file" onchange="this.form.submit()" /> 
     </form>
     <form action="/action_page.php">
       <input type="file" name="pic" accept="image/*">
       <input type="submit">
-    </form>
+    </form> -->
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
-  <script src="sliderpage.js"></script>
+  <script src="inputpage.js"></script>
   </body>
   </html>

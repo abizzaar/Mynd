@@ -69,3 +69,6 @@ function submitClick() {
     descrOfDay = document.getElementById("descrOfDay").value;
     window.location= "inputpage.html";
 }
+
+
+
