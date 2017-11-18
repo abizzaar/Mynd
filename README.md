@@ -1,0 +1,1 @@
+This is the repository for Mynd. Mynd is a small personal crisis management website for emotional/psychological help. Resources such as videos, help information, ideas for intervention. Aggregate/organize diverse resources to help individuals.

@@ -1,0 +1,172 @@
+
+
+.rslider {
+  display: inline-block;
+  margin: auto;
+}
+
+
+.navbar-brand {
+  width: 5%;
+}
+
+
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: top;
+}
+.navbar-nav {
+  width: 100%;
+  display: block;
+}
+
+.navbar-nav li {
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+
+.nav-link {
+  display: inline;
+}
+
+#navbar-titles {
+  text-align: center;
+  width: 80%;
+}
+
+#form {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.form-control {
+  text-align: center;
+}
+
+#bitmoji-image{
+  display: block;
+  height: 35%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.nav-item{
+  font-family: 'Roboto';
+}
+
+.navbar-brand{
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.input-group {
+  margin-top: 30%;
+}
+
+.errormsg { text-align: center; padding: 150px; }
+h1 { font-size: 50px; text-align: center; padding: 150px;}
+.email { color: #dc8100; text-decoration: none; }
+.email:hover { color: #333; text-decoration: none; }
+
+/*
+inputpage.html
+*/
+.inputIcon {
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  background-color: white;
+  width: 100%;
+}
+
+#button0 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 350%;
+  font-weight: bold;
+  width: 70%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+
+.buttonLayout {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  height: auto;
+  margin-left: 15%;
+  display: inline-flex;
+  width: 70%;
+  justify-content: center;
+}
+
+.buttonCustom {
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  background-color: #A2EAFF;
+  width: 100%;
+}
+
+.iconSymbol {
+  font-size: 300%;
+}
+
+#textContainer {
+  width: 80%;
+  margin: auto;
+  display: block;
+  height: 60%;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+.tabContent {
+  display: none;
+}
+
+#textArea {
+  width: 100%;
+  height: 100%;
+}
+
+#photoArea {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  background-color: #3CBC8D;
+  align-items: center;
+  margin-top: 50%;
+}
+
+.hideInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.para {
+  margin-top: 50%;
+  text-align: center;
+}
+.labelIcons {
+  font-size: 300%;
+  display: block; 
+  text-align: center;
+}
+
+#submitInput {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  width: 80%;
+}

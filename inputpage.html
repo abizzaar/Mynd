@@ -1,0 +1,68 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>Mynd</title>
+    <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="sliderpage.css"/>
+    
+  </head>
+  <body>
+  
+  
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
+          <a class="navbar-brand" href="index.html">Mynd</a>
+          <div id="navbar-titles">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-item nav-link active" href="index.html">Today <!-- <span class="sr-only">(current)</span> --></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="thisweek.html">This Week</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+       
+        
+
+    <div class="tab buttonLayout">
+        <button id="button0" type="button" onclick="openTab(event, 'textArea')" class="tablinks buttonCustom">T
+        </button>
+        <button id="button1" onclick="openTab(event, 'photo')" type="button" class="tablinks buttonCustom"><i  class="material-icons iconSymbol">photo_camera</i></button>
+        <button id="button2" onclick="openTab(event, 'video')" class="tablinks buttonCustom"><i class="material-icons iconSymbol">videocam</i></button>
+        <button id="button3" onclick="openTab(event, 'audio')" class="tablinks buttonCustom"><i class="material-icons iconSymbol">keyboard_voice</i></button>
+    </div> 
+
+    <div id="textContainer">
+    <textarea class="tabcontent" id="textArea" placeholder="Describe your day..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Describe your day...'"></textarea>
+      <form method="post" enctype="multipart/form-data">
+      <input id="photo" class="hideInput tabcontent" type="file" accept="image/*" multiple>
+      <label class="label" id="photoLabel" for="photo"><p class="para">Click here to upload photos!</p><i class="material-icons labelIcons">add_a_photo</i></label>
+      <input id="video" class="hideInput tabcontent" type="file" accept="video/*" multiple>
+      <label class="label" id="videoLabel"for="video"><p class="para">Click here to upload videos!</p><i class="material-icons labelIcons">video_call</i></label>
+      <input id="audio" class="hideInput tabcontent" type="file" accept="audio/*" multiple>
+      <label class="label" id="audioLabel"for="audio"><p class="para">Click here to upload audio!</p><i class="material-icons labelIcons">settings_voice</i></label>
+    </form>
+    </div>
+    <a href="thisweek.html" role="button" class="btn btn-primary" name="submit" id="submitInput" >Submit</a>
+
+<!-- 
+<form>
+        <input type="file" onchange="this.form.submit()" /> 
+    </form>
+    <form action="/action_page.php">
+      <input type="file" name="pic" accept="image/*">
+      <input type="submit">
+    </form> -->
+  <script src="jquery.js"></script>
+  <script src="roundSlider/dist/roundslider.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="inputpage.js"></script>
+  </body>
+  </html>
