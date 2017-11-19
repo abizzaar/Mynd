@@ -54,8 +54,10 @@ function openTab(evt, area) {
     for (i=0; i < label.childNodes.length; i++) {
         label.childNodes[i].style.display = "block";
     }
-    
+
     evt.currentTarget.className += " active";
+    if(area == "video" || area == "audio" || area == "photo")
+        document.getElementById("submitInput").style.marginTop = "56%";
 }
 
 /*  function showPhoto() {
