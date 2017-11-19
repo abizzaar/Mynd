@@ -15,7 +15,7 @@
     <div id="navbar-titles">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-item nav-link active" href="#today">Today <!-- <span class="sr-only">(current)</span> --></a>
+          <a class="nav-item nav-link active" href="#today">Today</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="thisweek.html">This Week</a>
@@ -29,12 +29,15 @@
     <div id="score"><img id='bitmoji-image' src='Bitmojis/10.png'></div>
     <div id="slider" class="rslider"></div>
     <div id="form">
-      <div class="input-group">
-        <input id="descrOfDay" class="form-control form-control-lg" type="text" placeholder="Three words to describe your day!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Three words to describe your day!'" >
-        <span class = "input-group-btn">
-          <button type="submit" class="btn btn-primary" name="submit" id="submitButton">Submit</button>
-        </span>
-      </div>
+      <form action="inputpage.html" method="GET">
+        <div class="input-group">
+          <input id="descrOfDay" class="form-control form-control-lg" name="threeWords" type="text" placeholder="Three words to describe your day!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Three words to describe your day!'">
+          <input type="text" name="mood" id="moodIn">
+          <span class = "input-group-btn">
+            <button type="submit" class="btn btn-primary" name="submit" id="submitButton">Submit</button>
+          </span>
+        </div>
+      </form>
     </div>
 
   </section>

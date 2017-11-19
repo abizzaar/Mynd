@@ -66,6 +66,14 @@
   margin-top: 30%;
 }
 
+#moodIn{
+  display: none;
+}
+
+#titleW{
+  display: none;
+}
+
 .errormsg { text-align: center; padding: 150px; }
 h1 { font-size: 50px; text-align: center; padding: 150px;}
 .email { color: #dc8100; text-decoration: none; }
@@ -100,7 +108,7 @@ inputpage.html
   height: auto;
   margin-left: 15%;
   display: inline-flex;
-  width: 70%;
+  width: 50%;
   justify-content: center;
 }
 
@@ -170,3 +178,42 @@ inputpage.html
   margin-top: 2%;
   width: 80%;
 }
+
+#table {
+  width: 100%;
+}
+
+.firstColumnDay {
+  width: 10%;
+  background-color: yellow;
+}
+
+#table tr {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 20%;
+}
+
+.secondColumnDate {
+  vertical-align: top;
+}
+
+.dateText {
+  text-align: right;
+  font-size: 100%;
+}
+
+.dayText {
+  font-size: 350%;
+  text-align: center;
+}
+
+.bitmojiImageInTable{
+  display: block;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 0;
+  float: left;
+}
+
+

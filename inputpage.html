@@ -41,13 +41,15 @@
 
     <div id="textContainer">
     <textarea class="tabcontent" id="textArea" placeholder="Describe your day..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Describe your day...'"></textarea>
-      <form method="post" enctype="multipart/form-data">
-      <input id="photo" class="hideInput tabcontent" type="file" accept="image/*" multiple>
+      <form method="GET" enctype="multipart/form-data" action="thisweek.html">
+      <input name="photo" id="photo" class="hideInput tabcontent" type="file" accept="image/*" multiple>
       <label class="label" id="photoLabel" for="photo"><p class="para">Click here to upload photos!</p><i class="material-icons labelIcons">add_a_photo</i></label>
-      <input id="video" class="hideInput tabcontent" type="file" accept="video/*" multiple>
+      <input name="video" id="video" class="hideInput tabcontent" type="file" accept="video/*" multiple>
       <label class="label" id="videoLabel"for="video"><p class="para">Click here to upload videos!</p><i class="material-icons labelIcons">video_call</i></label>
-      <input id="audio" class="hideInput tabcontent" type="file" accept="audio/*" multiple>
+      <input name="audio" id="audio" class="hideInput tabcontent" type="file" accept="audio/*" multiple>
       <label class="label" id="audioLabel"for="audio"><p class="para">Click here to upload audio!</p><i class="material-icons labelIcons">settings_voice</i></label>
+      <input name="threeWords" type="text" id="titleW">
+      <input name="moodScore" type="text" id="moodIn">
     </form>
     </div>
     <a href="thisweek.html" role="button" class="btn btn-primary" name="submit" id="submitInput" >Submit</a>

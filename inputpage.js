@@ -5,6 +5,15 @@ var textArea = document.getElementById("textArea");
 var textContainer = document.getElementById("textContainer");
 //var photoArea = '<input type="file" accept="image/*">';
 var w = "hi";
+var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
 function init() {
     // for (i=0;i<4;i++) {
     //     buttons[i] = (document.getElementById("button" + i));

@@ -7,17 +7,23 @@ function init(){
     document.getElementById("descrOfDay").style.fontSize = "10px";
 }
 
+// Element for mood value
+var moodScore = document.getElementById("moodIn");
+
 // Slider value indicates the bitmoji element
 var slider_value = document.getElementById("score");
 
 // Slider represents the slider element
 var slider = document.getElementById("slider");
 
+moodScore.value = 10;
+
 // Check function is to update the bitmoji as the slider is used
 function check(){
   var checkValue = Math.round((slider.options.value/10));
   if(checkValue>1)
     checkValue--;
+  moodScore.value = checkValue;
   imageHolder.src="Bitmojis/" + images[checkValue];
   // var imageHTML = "<img class='bitmoji-image' src='Bitmojis/" + images[checkValue] + "'>";
   // slider_value.innerHTML = imageHTML;
