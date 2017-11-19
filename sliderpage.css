@@ -50,7 +50,7 @@
   display: block;
   height: 35%;
   margin: 0 auto;
-  margin-top: 0;
+  margin-top: 6%;
 }
 
 .nav-item{
@@ -74,10 +74,9 @@
   display: none;
 }
 
-.errormsg { text-align: center; padding: 150px; }
-h1 { font-size: 50px; text-align: center; padding: 150px;}
-.email { color: #dc8100; text-decoration: none; }
-.email:hover { color: #333; text-decoration: none; }
+.formsub{
+  margin-top: 0;
+}
 
 /*
 inputpage.html
@@ -176,7 +175,11 @@ inputpage.html
   display: block;
   margin: auto;
   margin-top: 2%;
-  width: 80%;
+  width: 100%;
+}
+
+#dayd{
+  display: none;
 }
 
 #table {
@@ -215,5 +218,4 @@ inputpage.html
   margin-top: 0;
   float: left;
 }
-
 

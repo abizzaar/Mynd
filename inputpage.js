@@ -3,6 +3,8 @@ var textInput = "";
 var buttons = [];
 var textArea = document.getElementById("textArea");
 var textContainer = document.getElementById("textContainer");
+var moodScore = document.getElementById("moodIn");
+var threeW = document.getElementById("titleW");
 //var photoArea = '<input type="file" accept="image/*">';
 var w = "hi";
 var $_GET = {};
@@ -14,18 +16,11 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 
     $_GET[decode(arguments[1])] = decode(arguments[2]);
 });
-function init() {
-    // for (i=0;i<4;i++) {
-    //     buttons[i] = (document.getElementById("button" + i));
-    // }
-    // buttons[0].style.height = window.getComputedStyle(buttons[1]).width;
-    // console.log(buttons[0].style.height);
-    // for (i=1;i<4;i++) {
-    //     buttons[i].style.height = window.getComputedStyle(buttons[i]).width;
-    //     console.log("height" + buttons[i].style.height);
-    //     console.log("width" + window.getComputedStyle(buttons[i]).width);
-    // }
+moodScore.value = $_GET['mood'];
+threeW.value = $_GET['threeWords'];
 
+function init() {
+    document.getElementById("button0").click();
 }
 
 function openTab(evt, area) {
@@ -73,4 +68,3 @@ function openTab(evt, area) {
 //     }
 // }
 init();
-document.getElementById("button0").click();

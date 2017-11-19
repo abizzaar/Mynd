@@ -12,8 +12,7 @@
     
   </head>
   <body>
-  
-  
+    
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
           <a class="navbar-brand" href="index.html">Mynd</a>
           <div id="navbar-titles">
@@ -27,10 +26,7 @@
             </ul>
           </div>
         </nav>
-
        
-        
-
     <div class="tab buttonLayout">
         <button id="button0" type="button" onclick="openTab(event, 'textArea')" class="tablinks buttonCustom">T
         </button>
@@ -40,8 +36,8 @@
     </div> 
 
     <div id="textContainer">
-    <textarea class="tabcontent" id="textArea" placeholder="Describe your day..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Describe your day...'"></textarea>
-      <form method="GET" enctype="multipart/form-data" action="thisweek.html">
+    <form method="GET" action="thisweek.html">
+      <textarea name="textA" class="tabcontent" id="textArea" placeholder="Describe your day..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Describe your day...'"></textarea>
       <input name="photo" id="photo" class="hideInput tabcontent" type="file" accept="image/*" multiple>
       <label class="label" id="photoLabel" for="photo"><p class="para">Click here to upload photos!</p><i class="material-icons labelIcons">add_a_photo</i></label>
       <input name="video" id="video" class="hideInput tabcontent" type="file" accept="video/*" multiple>
@@ -50,18 +46,10 @@
       <label class="label" id="audioLabel"for="audio"><p class="para">Click here to upload audio!</p><i class="material-icons labelIcons">settings_voice</i></label>
       <input name="threeWords" type="text" id="titleW">
       <input name="moodScore" type="text" id="moodIn">
+      <button type="submit" class="btn btn-primary" name="submit" id="submitInput">Submit</button>
     </form>
     </div>
-    <a href="thisweek.html" role="button" class="btn btn-primary" name="submit" id="submitInput" >Submit</a>
-
-<!-- 
-<form>
-        <input type="file" onchange="this.form.submit()" /> 
-    </form>
-    <form action="/action_page.php">
-      <input type="file" name="pic" accept="image/*">
-      <input type="submit">
-    </form> -->
+    
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
