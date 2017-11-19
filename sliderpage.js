@@ -16,7 +16,7 @@ var slider_value = document.getElementById("score");
 // Slider represents the slider element
 var slider = document.getElementById("slider");
 
-moodScore.value = 10;
+moodScore.value = 9;
 
 // Check function is to update the bitmoji as the slider is used
 function check(){
