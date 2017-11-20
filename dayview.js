@@ -10,7 +10,6 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 
 //console.log($_GET);
 
-
 var imageHolder = document.getElementById("bitmoji-image");
 var images = [];
 
@@ -20,5 +19,6 @@ function init(){
     images[i] = '' + (i+1) + '.png';}
 	imageHolder.src="Bitmojis/" + images[$_GET['moodScore']];
 }
+
 
 init();

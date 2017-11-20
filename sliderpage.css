@@ -70,6 +70,10 @@
   display: none;
 }
 
+#tableClicked {
+  display: none;
+}
+
 #titleW{
   display: none;
 }
@@ -188,17 +192,17 @@ inputpage.html
 
 .firstColumnDay {
   width: 10%;
-  background-color: yellow;
+  padding-right: 1%;
+  background-color: #081B50;
+  border-right: 1px solid #081B50;
+  border-top: 1px solid white;
+  color: white;
 }
 
 #table tr {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #081B50;
+  border-top: 1px solid #081B50;
   height: 20%;
-}
-
-.secondColumnDate {
-  vertical-align: top;
 }
 
 .dateText {
@@ -216,6 +220,7 @@ inputpage.html
   height: 30%;
   margin: 0 auto;
   margin-top: 0;
-  float: left;
 }
 
+.thirdColumnBitmoji {
+}
