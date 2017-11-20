@@ -5,10 +5,9 @@ var textArea = document.getElementById("textArea");
 var textContainer = document.getElementById("textContainer");
 var moodScore = document.getElementById("moodIn");
 var threeW = document.getElementById("titleW");
-//var photoArea = '<input type="file" accept="image/*">';
-var w = "hi";
-var $_GET = {};
 
+// GET method definition, to take variables from URL passed via GET process
+var $_GET = {};
 document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
     function decode(s) {
         return decodeURIComponent(s.split("+").join(" "));
@@ -16,8 +15,11 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 
     $_GET[decode(arguments[1])] = decode(arguments[2]);
 });
+// To access GET elements, use it like an array but the ["item"] is the name in the input tag
+// See implementation below
 moodScore.value = $_GET['mood'];
 threeW.value = $_GET['threeWords'];
+
 
 function init() {
     document.getElementById("button0").click();
@@ -56,17 +58,9 @@ function openTab(evt, area) {
     }
 
     evt.currentTarget.className += " active";
+    // As form is implemented, when other options are selected the submit button moves up, to avoid this we implement a margin-top
     if(area == "video" || area == "audio" || area == "photo")
         document.getElementById("submitInput").style.marginTop = "56%";
 }
 
-/*  function showPhoto() {
-     textContainer.innerHTML = photoArea;
- } */
-// window.onload = function(){
-//     if(!window.location.hash){
-//         window.location = window.location + '#loaded';
-//         window.location.reload();
-//     }
-// }
 init();

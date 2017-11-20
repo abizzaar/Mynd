@@ -16,6 +16,7 @@ var slider_value = document.getElementById("score");
 // Slider represents the slider element
 var slider = document.getElementById("slider");
 
+// moodScore is the value of the mood input tag
 moodScore.value = 9;
 
 // Check function is to update the bitmoji as the slider is used
