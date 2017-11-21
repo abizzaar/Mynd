@@ -55,7 +55,35 @@ function init() {
     
     var thirdCell = newRow.insertCell();
     thirdCell.className = "fourthColumnText";
-    thirdCell.innerHTML = $_GET["threeWords"];
+
+    var leftWordsDiv = document.createElement("div");
+    leftWordsDiv.style.cssFloat = "left";
+    leftWordsDiv.innerHTML = $_GET["threeWords"];
+    var rightIconsDiv = document.createElement("div");
+    rightIconsDiv.style.cssFloat = "right";
+    rightIconsDiv.style.marginRight = "4%";
+    thirdCell.appendChild(leftWordsDiv);
+    thirdCell.appendChild(rightIconsDiv);
+
+    if ($_GET["photo"] != "") {
+        var icon = document.createElement("i");
+        icon.className = "material-icons";
+        icon.innerHTML = "photo_camera";
+        rightIconsDiv.appendChild(icon);
+    }
+    if ($_GET["video"] != "") {
+        var icon2 = document.createElement("i");
+        icon2.className = "material-icons";
+        icon2.innerHTML = "videocam";
+        rightIconsDiv.appendChild(icon2);
+    }
+    if ($_GET["audio"] != "") {
+        var icon3 = document.createElement("i");
+        icon3.className = "material-icons";
+        icon3.innerHTML = "keyboard_voice";
+        rightIconsDiv.appendChild(icon3);
+    }
+
 
     if ($_GET["moodScore"] > 1) {
         secondCell.style.background = "#DDEEF4";
@@ -69,7 +97,7 @@ function init() {
 
         secondCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfFirstBlock) + "%, white 0%)";
     }
-    
+
   }
 }
 
