@@ -55,6 +55,8 @@
 
 .nav-item{
   font-family: 'Roboto';
+  font-size: 110%;
+  color: #081B50;
 }
 
 .navbar-brand{
@@ -180,6 +182,8 @@ inputpage.html
   margin: auto;
   margin-top: 2%;
   width: 100%;
+  background-color: #081B50; 
+  border-color: #081B50;
 }
 
 #dayd{
@@ -223,3 +227,71 @@ inputpage.html
   margin: 0 auto;
   margin-top: 0;
 }
+
+#bitmojiDayView {
+  float: left;
+  width: 25%;
+  margin-top: 18%;
+  margin-left: 8vw;
+}
+
+#dayDayView {
+  font-weight: bold;
+  font-size: 300%;
+  text-align: right;
+  margin: 14% 8vw 0 0;
+  width: 55%;
+  float: right;
+  color: #081B50;
+}
+
+#dateDayView {
+  font-size: 100%;
+  text-align: right;
+  float: right;
+  width: 55%;
+  margin: 0 8vw 10% 0;
+  color: #081B50;
+}
+
+
+
+#threeWordsDayView {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 8vw;
+  clear: both;
+  color: #081B50;
+}
+
+.imageDayView {
+  width: 25vw;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+#firstImageDayView {
+  margin-left: 8vw;
+  float: left;
+}
+
+#secondImageDayView {
+  margin-left: 4.5vw;
+  float: left;
+}
+
+#thirdImageDayView {
+  float: right;
+  margin-right: 8vw;
+}
+
+
+#textDayView {
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: justify;
+  clear: both;
+  color: #081B50;
+}
+

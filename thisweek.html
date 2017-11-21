@@ -27,7 +27,7 @@
     </div>
   </nav>
 
-  <form method="GET" action="dayview.html">
+  <form method="GET" action="dayview.html"> 
     <table id="table">
       <tr>
         <td class="firstColumnDay" style="border-top: 1px solid #081B50" >
@@ -75,7 +75,7 @@
         <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 71.5%, white 0%)">
             <div style="float: left">Arno’s birthday party!</div>
             <div style="float: right; margin-right: 4%;">
-              <i  class="material-icons">photo_camera</i>
+              <i class="material-icons">photo_camera</i>
             </div>
             </td>
       </tr>
@@ -108,8 +108,14 @@
         <td class="thirdColumnBitmoji" style="background: #DDEEF4"><img class="bitmojiImageInTable" src='Bitmojis/7.png'></td>
         <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 57.2%, white 0%)">Made friends with Rafah</td>
       </tr>
+
     </table>
-  </form>
+  
+    <input id="rowNumberThisWeek" name="rowNumberClicked" type="text" style="display: none" onClick="GoToDayView()">
+    <button id="thisWeekButton" type="submit" style="display:none"></button>
+    
+    </form>
+
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>

@@ -10,6 +10,7 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {
 
 console.log($_GET);
 
+
 $(document).click(function(event) {
   var text = $(event.target).text();
   console.log(text);
@@ -21,7 +22,14 @@ var table = document.getElementById("table");
 // use this stuff in later implementations
 var currDay = 0;
 var days = ["S", "M", "T", "W", "T", "F", "S"];
+var rowNumberThisWeek = document.getElementById("rowNumberThisWeek");
+var buttonThisWeek = document.getElementById("thisWeekButton")
 
+$('#table tr').on('click', function () {
+  rowNumberThisWeek.value = $(this).index();
+  location.href="dayview.html";
+  buttonThisWeek.click();
+})
 
 
 function init() {
@@ -29,9 +37,13 @@ function init() {
     images[i] = "" + (i + 1) + ".png";
   }
 
+  rowNumberThisWeek.value = 5;
+
   var tableClicked = $_GET["tableClicked"] == "true" ? true : false;
   if (tableClicked) {
     var newRow = table.insertRow(-1);
+    newRow.id = "newRow";
+
     var firstCell = newRow.insertCell();
     firstCell.className = "firstColumnDay";
 
@@ -97,7 +109,6 @@ function init() {
 
         secondCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfFirstBlock) + "%, white 0%)";
     }
-
   }
 }
 

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Mynd</title>
   <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
@@ -30,12 +31,45 @@
     </div>
   </nav>
 
+    <button onclick="location.href = 'thisweek.html'" style="color: #081B50; margin-top: 5%; padding: 0 2% 0 2%; position: absolute; 
+  left: 5vw; background-color: #A2EAFF; border-color: #A2EAFF;" type="submit" class="btn btn-primary" name="submit" id="submitButton">
+      <i class="material-icons" style="font-size: 200%;">arrow_back</i>
+    </button>
+
+  <div id="bitmojiDayView">
+    <img id="bitmojiImageDayView" style="width: 100%" src='Bitmojis/8.png'>
+  </div>
+  <div id="dayDayView">
+    MONDAY
+  </div>
+  <div id="dateDayView">
+    January 27, 2017
+  </div>
+  <div id="threeWordsDayView">
+    Met Rafah!
+  </div>
+  <div id="firstImageDayView" class="imageDayView">
+    <img style="width: 100%" src='Images/pattern.jpg'>
+  </div>
+  <div id="secondImageDayView" class="imageDayView">
+    <img style="width: 100%" src='Images/surf.jpg'>
+  </div>
+  <div id="thirdImageDayView" class="imageDayView">
+    <img style="width: 100%" src='Images/videosurf.jpg'>
+  </div>
+
+  <div id="textDayView">
+    Today was a good day but something felt different. I met mother after a long time! And dad was feeling better about his illness,
+    which is good. Evanston is doing well. The mayor is happy, but his wife is still having that awful disease. God bless
+    her soul. I wanna go for a movie with Caroline, but Arno is always hanging out with her. Maybe I need to pivot.
+  </div>
+
 
 
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
-  <script src="thisweek.js"></script>
+  <script src="dayview.js"></script>
 </body>
 
 </html>
