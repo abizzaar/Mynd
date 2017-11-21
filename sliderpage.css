@@ -193,6 +193,7 @@ inputpage.html
 .firstColumnDay {
   width: 10%;
   padding-right: 1%;
+  padding-left: 1%;
   background-color: #081B50;
   border-right: 1px solid #081B50;
   border-top: 1px solid white;
@@ -208,6 +209,7 @@ inputpage.html
 .dateText {
   text-align: right;
   font-size: 100%;
+  color: #DDEEF4;
 }
 
 .dayText {
@@ -222,5 +224,4 @@ inputpage.html
   margin-top: 0;
 }
 
-.thirdColumnBitmoji {
-}
+

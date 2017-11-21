@@ -60,14 +60,14 @@ function init() {
     if ($_GET["moodScore"] > 1) {
         secondCell.style.background = "#DDEEF4";
 
-        var percentOfSecondBlock = (14 * ($_GET["moodScore"] - 2));
-        thirdCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfSecondBlock) + "%, white "+ String(100-percentOfSecondBlock) + "%)";
+        var percentOfSecondBlock = (14.3 * ($_GET["moodScore"] - 2));
+        thirdCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfSecondBlock) + "%, white 0%)";
        
     }
     else {
         var percentOfFirstBlock = (33 * ($_GET["moodScore"] + 1));
 
-        secondCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfFirstBlock) + "%, white "+ String(100-percentOfFirstBlock) + "%)";
+        secondCell.style.background = "linear-gradient(to right, #DDEEF4 " + String(percentOfFirstBlock) + "%, white 0%)";
     }
     
   }
