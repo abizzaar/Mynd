@@ -34,6 +34,7 @@ $('#table tr').on('click', function () {
 })
 
 function newRowClicked() {
+
   rowNumberThisWeek.value = "15";
   bitNumberThisWeek.value = $_GET["moodScore"];
   location.href="dayview.html";
