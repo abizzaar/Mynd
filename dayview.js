@@ -15,7 +15,7 @@ var dateDayView = document.getElementById("dateDayView");
 var threeWordsDayView = document.getElementById("threeWordsDayView");
 var bitmoji = document.getElementById("bitmojiImageDayView");
 
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+var days = ["Sunday", "Monday", "Tuesday", "Wed", "Thursday", "Friday", "Saturday", "Sunday"];
 var words = ["Inspired by talk", "Barely slept", "Awful problem set", "Arno’s birthday party!", "Got a job!", "Productive but boring", "Made a friend"];
 var bitmojiNums = ["10", "4", "2", "8", "9", "6", "7"] 
 
@@ -27,7 +27,7 @@ function init(){
         dayDayView.innerHTML = days[7];
         dateDayView.innerHTML = "January " + 30 + ", 2017";
         threeWordsDayView.innerHTML =  $_GET["threeWords"];
-        bitmoji.src = "Bitmojis/" + $_GET["moodScore"] + ".png";
+        bitmoji.src = "Bitmojis/" + (parseInt($_GET["bitNumberClicked"]) + 1) + ".png";
     }
     else {
         dayDayView.innerHTML = days[$_GET["rowNumberClicked"]];

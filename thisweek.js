@@ -23,13 +23,22 @@ var table = document.getElementById("table");
 var currDay = 0;
 var days = ["S", "M", "T", "W", "T", "F", "S"];
 var rowNumberThisWeek = document.getElementById("rowNumberThisWeek");
+var bitNumberThisWeek = document.getElementById("bitNumberThisWeek");
 var buttonThisWeek = document.getElementById("thisWeekButton")
 
 $('#table tr').on('click', function () {
   rowNumberThisWeek.value = $(this).index();
+  bitNumberThisWeek.value = $_GET["moodScore"];
   location.href="dayview.html";
   buttonThisWeek.click();
 })
+
+function newRowClicked() {
+  rowNumberThisWeek.value = "15";
+  bitNumberThisWeek.value = $_GET["moodScore"];
+  location.href="dayview.html";
+  buttonThisWeek.click();
+}
 
 
 function init() {
@@ -43,6 +52,7 @@ function init() {
   if (tableClicked) {
     var newRow = table.insertRow(-1);
     newRow.id = "newRow";
+    newRow.addEventListener('click', newRowClicked);
 
     var firstCell = newRow.insertCell();
     firstCell.className = "firstColumnDay";
