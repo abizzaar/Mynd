@@ -26,7 +26,7 @@ function init(){
     if ($_GET["rowNumberClicked"] == "15") {
         dayDayView.innerHTML = days[7];
         dateDayView.innerHTML = "January " + 30 + ", 2017";
-        threeWordsDayView.innerHTML =  $_GET["threeWords"];
+        threeWordsDayView.innerHTML =  $_GET["threeWordsClicked"];
         bitmoji.src = "Bitmojis/" + (parseInt($_GET["bitNumberClicked"]) + 1) + ".png";
     }
     else {
