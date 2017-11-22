@@ -100,8 +100,9 @@ inputpage.html
   font-family: "Times New Roman", Times, serif;
   font-size: 350%;
   font-weight: bold;
-  width: 20%;
-  display: flex;
+  width: 20vw;
+  height: 17vw;
+  display: block;
   align-content: center;
   justify-content: center;
   line-height: 1;
