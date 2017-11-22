@@ -96,10 +96,11 @@ inputpage.html
 }
 
 #button0 {
+  margin-left: 10vw;
   font-family: "Times New Roman", Times, serif;
   font-size: 350%;
   font-weight: bold;
-  width: 70%;
+  width: 20%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -108,21 +109,26 @@ inputpage.html
 
 
 .buttonLayout {
-  margin-top: 10%;
-  margin-bottom: 2%;
+ 
   height: auto;
-  margin-left: 24%;
-  display: inline-flex;
+  margin-left: 25%;
+  display: block;
   width: 50%;
   justify-content: center;
 }
 
 .buttonCustom {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  float: left;
+  display: block;
+  width: 20vw;
+  height: 17vw;
   border-color: black;
   border-width: 1px;
   border-radius: 4px 4px 0 0;
   background-color: #A2EAFF;
-  width: 100%;
+  
 }
 
 .iconSymbol {
@@ -130,6 +136,7 @@ inputpage.html
 }
 
 #textContainer {
+  clear: both;
   width: 80%;
   margin: auto;
   display: block;
