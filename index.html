@@ -1,50 +1,74 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8">
-    <title>Mynd</title>
-    <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
-      <link rel="stylesheet" type="text/css" href="sliderpage.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
-  </head>
-  <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
-    <a class="navbar-brand" href="#page-top">Mynd</a>
-    <div id="navbar-titles">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-item nav-link active" href="#today">Today</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="thisweek.html">This Week</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title>Mynd</title>
+  <link rel="stylesheet" href="roundSlider/dist/roundslider.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="sliderpage.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+    <textarea id="diaryTextArea" placeholder="Tell me all about your day..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tell me all about your day...'"></textarea>
+
+
+    <nav id="navigationBar">
+        <div id="firstNav" class="navigationItem" onclick="location.href = 'index.html'">Mynd</div>
+        <div id="secondNav" class="navigationItem" onclick="location.href = 'index.html'">Today</div>
+        <div id="thirdNav" class="navigationItem" onclick="location.href = 'thisweek.html'">This Week</div>
+      </nav>
+
+      <div id="diaryEntryHeader">
+        <button id="tickButton" onclick="closeDiary()">
+          <img id="diaryEntryTick" src="Images/up4.png">
+      </button>
+      </div>
 
 
   <section class="d-flex flex-column" id="today">
-    <div id="score"><img id='bitmoji-image' src='Bitmojis/10.png'></div>
+    <div id="score">
+      <img id='bitmoji-image' src='Bitmojis/10.png'>
+    </div>
     <div id="slider" class="rslider"></div>
     <div id="form" class="formsub">
-      <form action="inputpage.html" method="GET">
+      <form action="thisweek.html" method="GET">
         <div class="input-group">
-          <input id="descrOfDay" class="form-control form-control-lg" name="threeWords" type="text" placeholder="Three words to describe your day!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Three words to describe your day!'">
+          <input id="descrOfDay" class="form-control form-control-lg" name="threeWords" type="text" placeholder="Three words to describe your day!"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Three words to describe your day!'">
           <!-- Hidden input box for the score from the slider -->
-          <input type="text" name="mood" id="moodIn"> 
-          <span class = "input-group-btn">
-            <button style="background-color: #081B50; border-color: #081B50;" type="submit" class="btn btn-primary" name="submit" id="submitButton">Submit</button>
-          </span>
+          <input type="text" name="mood" id="moodIn">
+         
         </div>
+        <div id="descrAndMediaDiv">
+            <div id="diaryLabel">
+                <img id="diaryIcon" src="Images/diaryIcon.png" onclick="diaryEffect()">
+                <p id="diaryText">Diary</p>
+            </div>
+          <input name="media" id="media" class="hideInput" type="file" accept="image/*,video/*,audio/*" multiple>
+          <label id="mediaLabel" for="media">
+            <img id="mediaLabelIcon" src="Images/addPhoto.png">
+            <p id="mediaLabelText">Media</p>
+          </label>
+            <button id="submitRightLabel" >
+              <img id="submitRightIcon" src="Images/submitRightFancy.png">
+              <p id="submitRightText">Submit</p>
+            </button>
+        </div>
+
       </form>
     </div>
+
 
   </section>
   <script src="jquery.js"></script>
   <script src="roundSlider/dist/roundslider.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="sliderpage.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>

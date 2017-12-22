@@ -3,43 +3,52 @@
 .rslider {
   display: inline-block;
   margin: auto;
+  z-index:1;
 }
 
 
-.navbar-brand {
-  width: 5%;
+#navigationBar {
+  position: fixed;
+  top: 0;
+  z-index: 4;
 }
 
-
-.navbar .navbar-nav {
-  float: none;
-  vertical-align: top;
-}
-.navbar-nav {
-  width: 100%;
-  display: block;
-}
-
-.navbar-nav li {
-  text-align: center;
+.navigationItem {
   float: left;
-  width: 50%;
-}
-
-.nav-link {
-  display: inline;
-}
-
-#navbar-titles {
-  text-align: center;
-  width: 80%;
-}
-
-#form {
-  width: 70%;
+  height: 15vw;
   margin: auto;
-  margin-top: 2%;
-  margin-bottom: 5%;
+  text-align: center;
+  font-size: 5vw;
+  line-height: 15vw;
+  border-bottom: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0; 
+  color: #081B50;
+  background-color: white;
+}
+
+#firstNav {
+  width: 24vw;
+  font-stretch: extra-condensed;
+  font-size: 8vw;
+  font-weight: bold;
+  
+}
+
+#secondNav {
+  width: 38vw;
+  font-size: 6vw;
+}
+
+#thirdNav {
+  width: 38vw;
+  font-size: 6vw;
+}
+
+#today {
+  margin-top: 18vw;
 }
 
 .form-control {
@@ -50,7 +59,6 @@
   display: block;
   height: 35%;
   margin: 0 auto;
-  margin-top: 6%;
 }
 
 .nav-item{
@@ -64,9 +72,46 @@
   font-weight: bold;
 }
 
-.input-group {
-  margin-top: 30%;
+#form {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 5%;
 }
+
+.input-group {
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+#descrOfDay {
+  font-size: 5vw;
+  font-family: 'Roboto';
+  color: #081B50;
+  border: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  z-index: 1;
+}
+
+#descrOfDay::-webkit-input-placeholder {
+  color: #787F96 !important;
+  }
+   
+  #descrOfDay:-moz-placeholder { /* Firefox 18- */
+  color: #787F96 !important;  
+  }
+   
+  #descrOfDay::-moz-placeholder {  /* Firefox 19+ */
+  color: #787F96 !important;  
+  }
+   
+  #descrOfDay:-ms-input-placeholder {  
+  color: #787F96 !important;  
+  }
+
+
 
 #moodIn{
   display: none;
@@ -82,6 +127,149 @@
 
 .formsub{
   margin-top: 0;
+}
+
+#descrAndMediaDiv {
+
+}
+
+
+.hideInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
+#diaryLabel {
+  float: left;
+  width: 18vw;
+  height: 27vw;
+  margin-top: 5vw;
+  border: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+#diaryIcon {
+  margin: 3vw auto 0 auto;
+  display: block;
+  width: 69%;
+}
+
+#diaryText {
+  text-align: center;
+  color: #081B50;
+  margin-top: 1vw;
+}
+
+#mediaLabel {
+  float: left;
+  width: 18vw;
+  height: 27vw;
+  margin-top: 5vw;
+  border: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+#mediaLabelIcon {
+  margin: 1.4vw auto 0 auto;
+  display: block;
+  width: 87%;
+}
+
+#mediaLabelText {
+  text-align: center;
+  color: #081B50;
+  margin-top: 1vw;
+}
+
+#submitRightLabel {
+  float: right;
+  width: 18vw;
+  height: 27vw;
+  margin-top: 5.5vw;
+  margin-right: 1vw;
+  padding: 0 0 0 0;
+}
+
+#submitRightIcon {
+  display: block;
+  width: 90%;
+  margin: 2vw auto 0 auto;
+}
+
+#submitRightText {
+  text-align: center;
+  color: #081B50;
+  margin-top: 1vw;
+}
+
+
+#diaryTextArea {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(white 35px, #081B50 35px, #081B50 36px);
+  background-image: -moz-linear-gradient(white 35px, #081B50 35px, #081B50 36px);
+  background-image: -ms-linear-gradient(white 35px, #081B50 35px, #081B50 36px);
+  background-image: -o-linear-gradient(white 35px, #081B50 35px, #081B50 36px);
+  background-image: linear-gradient(white 35px, #081B50 35px, #081B50 36px);
+  background-size: 100% 36px;
+  line-height: 36px;
+  font-size: 115%;
+  font-family: "Bradley Hand";
+  height: 0;
+  visibility: hidden;
+  -webkit-transition: height 1.5s; /* Safari */
+  transition: height 1.5s;
+  color: #081B50;
+  padding-left: 7%;
+  padding-right: 7%;
+  resize: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+#diaryEntryHeader {
+  top: 15vw;
+  height: 40px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  border-bottom: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0; 
+  
+}
+
+ #tickButton {
+  display: block;
+  margin: 2px auto 0 80%;
+  padding: 0;
+  
+} 
+
+#diaryEntryTick {
+  display: block;
+  margin: 1px auto 0 auto;
+  height: 30px;
 }
 
 /*
@@ -159,19 +347,12 @@ inputpage.html
   margin-top: 50%;
 }
 
-.hideInput {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
 
 .para {
   margin-top: 50%;
   text-align: center;
 }
+
 .labelIcons {
   font-size: 300%;
   display: block; 
@@ -193,6 +374,7 @@ inputpage.html
 
 #table {
   width: 100%;
+  margin-top: 15vw;
 }
 
 .firstColumnDay {
@@ -232,7 +414,7 @@ inputpage.html
 #bitmojiDayView {
   float: left;
   width: 25%;
-  margin-top: 18%;
+  margin-top: 33vw;
   margin-left: 8vw;
 }
 
@@ -240,7 +422,7 @@ inputpage.html
   font-weight: bold;
   font-size: 300%;
   text-align: right;
-  margin: 14% 8vw 0 0;
+  margin: 29vw 8vw 0 0;
   width: 55%;
   float: right;
   color: #081B50;

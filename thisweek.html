@@ -12,24 +12,31 @@
 </head>
 <body>
 
+  
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
+    <nav id="navigationBar">
+        <div id="firstNav" class="navigationItem" onclick="location.href = 'index.html'">Mynd</div>
+        <div id="secondNav" class="navigationItem" onclick="location.href = 'index.html'">Today</div>
+        <div id="thirdNav" class="navigationItem" onclick="location.href = 'thisweek.html'">This Week</div>
+      </nav>
+
+ <!--  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A2EAFF;">
     <a class="navbar-brand" href="index.html">Mynd</a>
     <div id="navbar-titles">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-item nav-link active" href="index.html">Today <!-- <span class="sr-only">(current)</span> --></a>
+          <a class="nav-item nav-link active" href="index.html">Today</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="thisweek.html">This Week</a>
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
   <form method="GET" action="dayview.html"> 
     <table id="table">
-      <tr>
+      <tr style="border-top: 0">
         <td class="firstColumnDay" style="border-top: 1px solid #081B50" >
           <div class="dateText">23</div>
           <div class="dayText">S</div>
@@ -108,7 +115,30 @@
         <td class="thirdColumnBitmoji" style="background: #DDEEF4"><img class="bitmojiImageInTable" src='Bitmojis/7.png'></td>
         <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 57.2%, white 0%)">Made friends with Rafah</td>
       </tr>
-
+      <tr>
+          <td class="firstColumnDay">
+            <div class="dateText">29</div>
+            <div class="dayText">S</div>
+          </td>
+          <td class="thirdColumnBitmoji" style="background: #DDEEF4"><img class="bitmojiImageInTable" src='Bitmojis/7.png'></td>
+          <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 57.2%, white 0%)">Made friends with Rafah</td>
+        </tr>
+        <tr>
+            <td class="firstColumnDay">
+              <div class="dateText">29</div>
+              <div class="dayText">S</div>
+            </td>
+            <td class="thirdColumnBitmoji" style="background: #DDEEF4"><img class="bitmojiImageInTable" src='Bitmojis/7.png'></td>
+            <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 57.2%, white 0%)">Made friends with Rafah</td>
+          </tr>
+          <tr>
+              <td class="firstColumnDay">
+                <div class="dateText">29</div>
+                <div class="dayText">S</div>
+              </td>
+              <td class="thirdColumnBitmoji" style="background: #DDEEF4"><img class="bitmojiImageInTable" src='Bitmojis/7.png'></td>
+              <td class="fourthColumnText" style="background: linear-gradient(to right, #DDEEF4 57.2%, white 0%)">Made friends with Rafah</td>
+            </tr>
     </table>
   
     <input id="rowNumberThisWeek" name="rowNumberClicked" type="text" style="display: none">

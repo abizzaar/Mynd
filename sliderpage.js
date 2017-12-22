@@ -81,5 +81,27 @@ function submitClick() {
     window.location= "inputpage.html";
 }
 
+function diaryEffect() {
+  var diaryEntry = document.getElementById("diaryEntryHeader");
+  diaryEntry.style.display = "initial";
+  var diaryIcon = document.getElementById("diaryTextArea");
+  diaryIcon.style.marginTop = 0.15*screen.width + 40;
+  diaryIcon.style.visibility= "visible";
+  var remainingHeight = screen.height - 0.15*screen.width - 40;
+  diaryIcon.style.height = remainingHeight;
+}
+
+function closeDiary() {
+  var diaryEntry = document.getElementById("diaryEntryHeader");
+  var diaryIcon = document.getElementById("diaryTextArea");
+  diaryIcon.style.height = "0";
+
+
+  setTimeout(function() {
+    diaryEntry.style.display = "none";
+    diaryIcon.style.visibility= "hidden";
+  }, 1300)
+}
+
 
 
