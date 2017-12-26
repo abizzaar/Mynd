@@ -15,23 +15,34 @@ var slider_value = document.getElementById("score");
 
 // Slider represents the slider element
 var slider = document.getElementById("slider");
-var sliderColorArray = document.getElementsByClassName("rs-range-color");
+var sliderColorArray = document.getElementsByClassName("rs-path-color");
 
 // moodScore is the value of the mood input tag
-moodScore.value = 9;
+moodScore.value = 4;
 
 // Check function is to update the bitmoji as the slider is used
 function check(){
-  var checkValue = Math.round((slider.options.value/10));
-  if(checkValue>1)
-    checkValue--;
+  var checkValue = 9 - Math.floor((slider.options.value/10));
+  if (checkValue == -1) checkValue++;
   moodScore.value = checkValue;
   imageHolder.src="Bitmojis/" + images[checkValue];
 
-  var sat = checkValue * 10;
+  /*
+  if (checkValue < 6) {
+    var hue = (20 - ((checkValue /  5) * 20)) + 160;
+  } else {
+    var hue = (20 - (((checkValue - 6) / 3) * 20)) + 60;
+    
+  } */
+
+  var hue = (80 - (checkValue / 9) * 80) + 120;
+
   for (i = 0; i < sliderColorArray.length; i++) {
-    sliderColorArray[i].style.backgroundColor =  "hsl(194, " + sat + "%, 50%)";
+    sliderColorArray[i].style.backgroundColor =  "hsl(" + hue + ", 100%, 78%)";
   }
+  
+
+  
  
 
   // var imageHTML = "<img class='bitmoji-image' src='Bitmojis/" + images[checkValue] + "'>";
@@ -74,7 +85,7 @@ function init(){
     change: "check",
     stop: "isStop",
     keyboardAction: false,
-    value: 99
+    value: 50
   });
 
 })(jQuery); // End of use strict
