@@ -15,6 +15,7 @@ var slider_value = document.getElementById("score");
 
 // Slider represents the slider element
 var slider = document.getElementById("slider");
+var sliderColorArray = document.getElementsByClassName("rs-range-color");
 
 // moodScore is the value of the mood input tag
 moodScore.value = 9;
@@ -26,6 +27,13 @@ function check(){
     checkValue--;
   moodScore.value = checkValue;
   imageHolder.src="Bitmojis/" + images[checkValue];
+
+  var sat = checkValue * 10;
+  for (i = 0; i < sliderColorArray.length; i++) {
+    sliderColorArray[i].style.backgroundColor =  "hsl(194, " + sat + "%, 50%)";
+  }
+ 
+
   // var imageHTML = "<img class='bitmoji-image' src='Bitmojis/" + images[checkValue] + "'>";
   // slider_value.innerHTML = imageHTML;
 }

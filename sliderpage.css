@@ -6,6 +6,9 @@
   z-index:1;
 }
 
+.rs-range-color {
+  background-color: hsl(194, 100%, 50%);
+}
 
 #navigationBar {
   position: fixed;

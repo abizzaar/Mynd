@@ -29,12 +29,18 @@ function init(){
         threeWordsDayView.innerHTML =  $_GET["threeWordsClicked"];
         bitmoji.src = "Bitmojis/" + (parseInt($_GET["bitNumberClicked"]) + 1) + ".png";
     }
-    else {
+    else if ($_GET["rowNumberClicked"] < 7){
         dayDayView.innerHTML = days[$_GET["rowNumberClicked"]];
         dateDayView.innerHTML = "January " + (23 + parseInt($_GET["rowNumberClicked"])) +  ", 2017";
         threeWordsDayView.innerHTML =  words[$_GET["rowNumberClicked"]];
         bitmoji.src = "Bitmojis/" + bitmojiNums[$_GET["rowNumberClicked"]] + ".png";
-}
+    }
+    else {
+        dayDayView.innerHTML = "Monday";
+        dateDayView.innerHTML = "January 30, 2017";
+        threeWordsDayView.innerHTML =  "Awful problem set";
+        bitmoji.src = "Bitmojis/2.png";
+    }
     
 
 }
