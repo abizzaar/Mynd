@@ -35,10 +35,10 @@ function check(){
     
   } */
 
-  var hue = (80 - (checkValue / 9) * 80) + 120;
+  var hue = (60 - (checkValue / 9) * 60) + 180;
 
   for (i = 0; i < sliderColorArray.length; i++) {
-    sliderColorArray[i].style.backgroundColor =  "hsl(" + hue + ", 100%, 78%)";
+    sliderColorArray[i].style.backgroundColor =  "hsl(" + hue + ", 100%, 57%)";
   }
   
 
