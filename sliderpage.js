@@ -3,6 +3,7 @@ var images = [];
 var imageHolder = document.getElementById("bitmoji-image");
 
 function init(){
+  document.write("working");
   if(screen.width <= 500)
     document.getElementById("descrOfDay").style.fontSize = "10px";
 }
