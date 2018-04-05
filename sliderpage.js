@@ -105,10 +105,11 @@ function diaryEffect() {
   var diaryEntry = document.getElementById("diaryEntryHeader");
   diaryEntry.style.display = "initial";
   var diaryIcon = document.getElementById("diaryTextArea");
-  diaryIcon.style.marginTop = 0.15*screen.width + 40;
+  diaryIcon.style.marginTop = "calc(15vw + 40px)";
   diaryIcon.style.visibility= "visible";
-  var remainingHeight = screen.height - 0.15*screen.width - 40;
-  diaryIcon.style.height = remainingHeight;
+  var screenHeight = screen.height;
+  /* this is the remaining height after margin top is added to the element */
+  diaryIcon.style.height = "calc(100% - 15vw - 40px)";
 }
 
 function closeDiary() {

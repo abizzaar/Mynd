@@ -40,20 +40,19 @@
 }
 
 #firstNav {
-  width: 24vw;
+  width: 26vw;
   font-stretch: extra-condensed;
   font-size: 8vw;
   font-weight: bold;
-  
 }
 
 #secondNav {
-  width: 38vw;
+  width: 37vw;
   font-size: 6vw;
 }
 
 #thirdNav {
-  width: 38vw;
+  width: 37vw;
   font-size: 6vw;
 }
 
