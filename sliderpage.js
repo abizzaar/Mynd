@@ -78,7 +78,7 @@ function init(){
   "use strict"; // Start of use strict
 
   $("#slider").roundSlider({
-    radius: 0.35 * screen.width,
+    radius: 0.35 * document.documentElement.clientWidth,
     circleShape: "half-bottom",
     sliderType: "min-range",
     showTooltip: false,
