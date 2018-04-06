@@ -400,6 +400,16 @@ inputpage.html
   color: white;
 }
 
+.fourthColumnText {
+  font-size: 4.7vw;
+}
+
+.material-icons {
+  padding-top: 0.6vw;
+  font-size: 4.8vw;
+}
+
+
 #table tr {
   border-bottom: 1px solid #081B50;
   border-top: 1px solid #081B50;
@@ -492,7 +502,3 @@ inputpage.html
   font-size: 90%;
 }
 
-
-.material-icons {
-
-}
