@@ -395,7 +395,6 @@ inputpage.html
   padding-right: 1%;
   padding-left: 1%;
   background-color: #081B50;
-  border-right: 1px solid #081B50;
   border-top: 1px solid white;
   color: white;
 }
@@ -411,7 +410,7 @@ inputpage.html
 
 
 #table tr {
-  border-bottom: 1px solid #081B50;
+  border-bottom: 0.2vw solid #081B50;
 }
 
 .dateText {
