@@ -410,13 +410,13 @@ inputpage.html
 }
 
 .dayText {
-  font-size: 350%;
+  font-size: 3.5em;
   text-align: center;
 }
 
 .bitmojiImageInTable{
   display: block;
-  height: 30%;
+  height: 4.6em;
   margin: 0 auto;
   margin-top: 0;
 }
@@ -430,7 +430,7 @@ inputpage.html
 
 #dayDayView {
   font-weight: bold;
-  font-size: 300%;
+  font-size: 3em;
   text-align: right;
   margin: 29vw 8vw 0 0;
   width: 55%;
