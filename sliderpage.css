@@ -388,6 +388,7 @@ inputpage.html
 #table {
   width: 100%;
   margin-top: 15vw;
+  font-size: 90%;
 }
 
 .firstColumnDay {
@@ -395,9 +396,11 @@ inputpage.html
   padding-right: 1%;
   padding-left: 1%;
   background-color: #081B50;
-  border-top: 1px solid white;
+  border-bottom: 0.2vw solid white;
   color: white;
 }
+
+.second
 
 .fourthColumnText {
   font-size: 4.7vw;
@@ -411,7 +414,9 @@ inputpage.html
 
 #table tr {
   border-bottom: 0.2vw solid #081B50;
+  
 }
+
 
 .dateText {
   text-align: right;
@@ -427,9 +432,9 @@ inputpage.html
 .bitmojiImageInTable{
   display: block;
   height: 20vw;
-  margin: 0 auto;
-  margin-top: 0;
+  margin: auto;
 }
+
 
 #bitmojiDayView {
   float: left;
