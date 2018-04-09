@@ -386,9 +386,14 @@ inputpage.html
 }
 
 #table {
-  width: 100%;
-  margin-top: 15vw;
   font-size: 90%;
+  margin-top: calc(15vw + 0.5px);
+  /* Firefox */
+  margin-top: -moz-calc(15vw + 0.5px);
+  /* WebKit */
+  margin-top: -webkit-calc(15vw + 0.5px);
+  /* Opera */
+  margin-top: -o-calc(15vw + 0.5px);
 }
 
 .firstColumnDay {
@@ -398,9 +403,9 @@ inputpage.html
   background-color: #081B50;
   border-bottom: 0.2vw solid white;
   color: white;
+ 
 }
 
-.second
 
 .fourthColumnText {
   font-size: 4.7vw;
@@ -414,7 +419,6 @@ inputpage.html
 
 #table tr {
   border-bottom: 0.2vw solid #081B50;
-  
 }
 
 
