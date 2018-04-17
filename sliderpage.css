@@ -243,11 +243,11 @@ body {
   line-height: 36px;
   font-size: 115%;
   font-family: "Bradley Hand";
+  color: #696969;
   height: 0;
   visibility: hidden;
   -webkit-transition: height 1.5s; /* Safari */
   transition: height 1.5s;
-  color: #081B50;
   padding-left: 7%;
   padding-right: 7%;
   resize: none;
@@ -515,3 +515,8 @@ inputpage.html
   font-size: 90%;
 }
 
+
+@font-face {
+  font-family: 'Bradley Hand';
+  src: url('fonts/bradley.otf') format('opentype');
+}
