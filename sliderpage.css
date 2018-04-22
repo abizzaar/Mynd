@@ -24,6 +24,11 @@ body {
   position: fixed;
   top: 0;
   z-index: 4;
+  border-bottom: solid;
+  border-width: 0 1px;
+  border-color: #081B50;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0; 
 }
 
 .navigationItem {
@@ -33,11 +38,6 @@ body {
   text-align: center;
   font-size: 5vw;
   line-height: 15vw;
-  border-bottom: solid;
-  border-width: 0 1px;
-  border-color: #081B50;
-  border-width: 1px;
-  border-radius: 4px 4px 0 0; 
   color: #081B50;
   background-color: white;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 #thirdNav {
-  width: 37vw;
+  width: 36vw;
   font-size: 6vw;
 }
 
