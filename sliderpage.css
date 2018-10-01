@@ -509,3 +509,25 @@ inputpage.html
 form {
   margin-bottom: 0;
 }
+
+
+@media only screen and (min-width: 700px) {
+  * {
+    display: none;
+  }
+
+  html, body, #theGoodLife, #theGoodLife a {
+    display: block;
+  }
+
+  #theGoodLife {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  #theGoodLife a {
+    display: inline;
+    text-decoration: underline;
+    color: hsl(210, 100%, 57%);
+  }
+}
