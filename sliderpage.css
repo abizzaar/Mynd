@@ -271,9 +271,8 @@ body {
 
 #diaryEntryTick {
   display: block;
-  margin: 5px auto 0 auto;
-  height: 28px;
-  transform
+  margin: -5px auto 0 auto;
+  height: 40px;
 }
 
 /*
